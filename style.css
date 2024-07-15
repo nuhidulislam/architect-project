@@ -4,3 +4,214 @@
   padding: 0px;
   font-family: "Work Sans";
 }
+
+/* shared styles */
+
+.btn-primary{
+  padding: 20px 20px;
+  background-color: rgba(255, 144, 14, 1);
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+
+}
+
+.primary-color{
+  color: rgb(111, 105, 105);
+}
+
+/* navber style start here */
+.header{
+ 
+  box-sizing: border-box;
+  background: rgba(255, 144, 14, 0.1);
+}
+
+.navber{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  margin: 10px auto;
+  margin-bottom: 50px;
+  align-items: center;
+}
+.navber h1{
+  font-size: 45px;
+  font-weight: 600;
+}
+.navber ul{
+  display: flex;
+}
+.navber ul li{
+  list-style: none;
+
+}
+.navber ul li a{
+  text-decoration: none;
+  margin-left: 50px;
+  color: black;
+}
+
+.banner-heading{
+  text-align: center;
+  width: 60%;
+  margin: 20px auto ;
+}
+
+.banner-heading h1{
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.banner-heading P{
+  margin: 30px 0px;
+}
+
+.banner-img{
+  width: 90%;
+  height: 500px;
+  display: block;
+  margin: 0px auto;
+  border-radius: 10px;
+  margin-bottom: 20px;
+ 
+}
+
+
+/* team section style start here */
+
+.team-container{
+  display: flex;
+
+  align-items: center;
+  width: 90%;
+  margin: 50px auto;
+}
+
+.team-img{
+  display: grid;
+  grid-template-columns: repeat(2 ,1fr);
+  gap: 24px;
+}
+
+.team-text{
+
+margin-left: 50px;
+}
+
+.team-text p{
+  margin: 15px 0px;
+}
+
+/* feature contaier style here */
+.feature-container{
+  display: flex;
+  width: 90%;
+  margin: 20px auto;
+  gap: 50px;
+ 
+}
+
+.feature-text{
+ 
+  width: 50%;
+}
+
+.feature-heading{
+  border-left: 10px solid rgba(255, 144, 14, 1) ;
+  padding-left: 10px;
+}
+
+.feature-part{
+  box-shadow: 0px 4px 30px 2px rgba(0, 0, 0, 0.09) ;
+ padding: 10px;
+  margin-top: 25px;
+}
+
+
+.architect-img{
+  height: 720px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+#experience{
+  margin-top: -60px;
+  margin-left: -40px;
+}
+
+/* some-facts-container style start here */
+.facts-container{
+
+  width: 90%;
+  margin: 20px auto;
+ display: flex;
+ justify-content: space-between;
+  
+}
+.some-facts-heading{
+  
+  width: 600px;
+  margin-left: 70px;
+}
+
+.facts-card{
+  border: 2px solid rgba(255, 144, 14, 1) ;
+  height: 180px;
+  width: 170px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+
+
+.sponspore-container{
+  display: flex;
+  width: 90%;
+  margin: 50px auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sponspore-container img{
+  filter: grayscale(100%);
+}
+
+/* responsive web side */
+
+@media screen and (max-width: 576px) {
+  .navber{
+    flex-direction: column;
+  }
+
+  .navber ul{
+    margin: 20px auto;
+  }
+  /* team section */
+  .team-container{
+    flex-direction: column;
+  }
+  .team-img{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .team-text{
+    margin: 0px auto;
+    margin-top: 30px;
+  }
+}
+
+
+@media screen and (min-width:576px) and (max-width: 992px) {
+/* team-section */
+.team-container{
+  flex-direction: column;
+}
+  
+}
+
